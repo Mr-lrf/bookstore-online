@@ -43,7 +43,7 @@
     left: 0;
     right: 0;
     border-top:1px solid #D7D7D7;
-    padding: 0.5rem;
+    padding: 0.1rem;
     color: #666666;
   }
   ul li{

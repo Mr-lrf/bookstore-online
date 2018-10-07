@@ -25,6 +25,6 @@
     right: 0;
   }
   .main{
-    margin-top: 2.5rem;
+    margin-top: 0.8rem;
   }
 </style>

@@ -19,6 +19,6 @@
     text-align: center;
     background: black;
     color: white;
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
 </style>
