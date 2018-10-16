@@ -23,8 +23,10 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
   }
   .main{
     margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
   }
 </style>

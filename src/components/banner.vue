@@ -45,6 +45,7 @@
     border-top:1px solid #D7D7D7;
     padding: 0.1rem;
     color: #666666;
+    background: #ffffff;
   }
   ul li{
     display: flex;

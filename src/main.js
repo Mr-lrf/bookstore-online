@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import axios from 'axios'
 Vue.config.productionTip = false
-
+Vue.prototype.axios = axios;
+Vue.prototype.url = './../../../static/api';
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -13,3 +15,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
