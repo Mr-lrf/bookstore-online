@@ -46,7 +46,7 @@
       </div>
     </div>
     <!--获取图书信息弹框组件-->
-    <lrf-getBookInfo :bookInfo="bookInfo" class="book-info" :class="show" @hidden="hiddenBox"></lrf-getBookInfo>
+      <lrf-getBookInfo :bookInfo="bookInfo" class="book-info" :class="show" @hidden="hiddenBox"></lrf-getBookInfo>
   </div>
 </template>
 
@@ -164,12 +164,16 @@
     position: fixed;
     border: 1px solid black;
     top: 1rem;
-    left: 0.4rem;
-    right: 0.4rem;
+    left: 0.2rem;
+    right: 0.2rem;
     z-index: 999;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
   }
   .show{
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
   }
 </style>

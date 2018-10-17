@@ -13,6 +13,7 @@
         <div><label class="gray">页数</label>{{bookInfo.page}}</div>
         <div><label class="gray">书号</label>{{bookInfo.ISBN}}</div>
         <div><label class="gray">出版日期</label>{{bookInfo.day}}</div>
+        <div><label class="gray">价格</label>￥{{bookInfo.price}}</div>
       </div>
       <div class="detail">
         <div class="title">{{bookInfo.name}}</div>
@@ -33,6 +34,12 @@
     methods:{
 
 
+    },
+    data(){
+      return{
+        price:0,
+        count:1,
+      }
     }
   }
 </script>
@@ -40,6 +47,7 @@
 <style scoped>
   .info-box{
     background: white;
+    height:90vh;
   }
   .box-header{
     text-align: right;
@@ -72,6 +80,7 @@
     font-size: 0.2rem;
     padding: 0.3rem 0 0.3rem 0.2rem;
     box-sizing: border-box;
+    width: calc(100% - 2.5rem);
   }
   .info label{
     display:inline-block;
@@ -80,6 +89,9 @@
   }
   .info div{
     padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
   }
   .detail{
     width: 100%;
@@ -92,6 +104,10 @@
   .box-footer{
     text-align: center;
     padding: 0.2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
   .describe,.describe2{
     font-size: 0.2rem;
